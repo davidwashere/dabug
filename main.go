@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/dcaravel/dabug/log"
+	"github.com/davidwashere/dabug/log"
 )
 
 func main() {
