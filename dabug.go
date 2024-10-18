@@ -174,7 +174,7 @@ func getSource() *source {
 	// skip [runtime.Callers, this function, this function's caller]
 	// skip
 	// 1. runtime.Callers
-	// 2. getSrouce
+	// 2. getSource
 	// 3. appendLine
 	// 4. Msg, Objs, etc.
 	runtime.Callers(4, pcs[:])
@@ -183,7 +183,7 @@ func getSource() *source {
 	fs := runtime.CallersFrames([]uintptr{pc})
 	f, _ := fs.Next()
 
-	_, fpath, _, _ := runtime.Caller(0)
+	_, fpath, _, _ := runtime.Caller(3)
 
 	var file string
 	file = strings.TrimPrefix(f.File, filepath.Dir(fpath))
