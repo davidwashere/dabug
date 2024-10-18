@@ -1,21 +1,39 @@
-package main
+// package main
+package dabug
 
+/*
 import (
 	"fmt"
 
 	"github.com/davidwashere/dabug/log"
 )
 
-func main() {
-	log.Append("A")
-	thinga()
-	log.Append("B")
-	thingb()
+type person struct {
+	name     string
+	location string
+}
 
-	log.Append("wat")
+func main() {
+	// defer log.Flush()
+	log.AutoFlush(true)
+
+	log.Prefix("DAVE: ")
+	log.Msg("A")
+	thinga()
+	log.Msg("B")
+	thingb()
+	log.Here()
+	p1()
+
+	log.Msg("wat")
 
 	thingc()
-	log.Flush()
+}
+
+func p1() {
+	p := person{"dave", "earth"}
+	pp := &person{"fred", "mars"}
+	log.Objs(p, pp)
 }
 
 func thinga() {
@@ -26,83 +44,4 @@ func thingb() {
 	fmt.Printf("thingb\n")
 }
 
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- */
-
-func thingc() {
-	fmt.Printf("thingc\n")
-	log.Append("C")
-}
+*/
